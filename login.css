@@ -1,0 +1,64 @@
+/* Background styling */
+#con-login {
+    box-shadow: -6px 14px 60px 43px rgba(184,184,184,0.4);
+-webkit-box-shadow: -6px 14px 60px 43px rgba(184,184,184,0.4);
+-moz-box-shadow: -6px 14px 60px 43px rgba(184,184,184,0.4);
+}
+.bg-custom {
+    background-color: #0b193b;
+}
+
+/* Form box */
+.bg-white {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+
+/* Image for login */
+.login-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* Typography */
+h4 {
+    color: #4D4D4D;
+}
+
+/* Form styling */
+.form-label {
+    color: #4D4D4D;
+}
+
+.form-control {
+    border-radius: 10px;
+}
+
+.btn-primary {
+    background-color: #1E88E5;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #1E88E5;
+}
+
+/* Links */
+a {
+    color: #4D4D4D;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive behavior */
+@media (max-width: 991px) {
+    .login-image {
+        display: none;
+    }
+}
+

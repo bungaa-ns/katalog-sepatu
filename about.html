@@ -14,24 +14,49 @@
         }
 
         /* Navbar Styling */
-        .navbar {
-            background-color: #000;
-            padding: 1rem;
-        }
-
         .navbar-brand {
-            color: #fff;
             font-weight: bold;
+            font-size: 1.5rem;
         }
 
-        .navbar-nav .nav-link {
+        .nav-link {
+            font-size: 1rem;
+            margin-right: 15px;
+            position: relative;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
             color: #000;
-            font-weight: bold;
         }
 
-        .navbar-nav .nav-link:hover {
-            text-decoration: underline;
+        @media (min-width: 991px) {}
+
+        .nav-link::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 2px;
+            background-color: #021648;
+            visibility: hidden;
+            transition: 0.1s ease-in-out;
         }
+
+        .nav-link:hover::before,
+        .nav-link.active::before {
+            width: 100%;
+            visibility: visible;
+        }
+
+        .nav-link:hover :before,
+        .nav-link.active::before {
+            width: 100%;
+            visibility: visible;
+        }
+
 
         /* About Section */
         .about-section {
@@ -46,15 +71,15 @@
         }
 
         .about-section p {
-            line-height: 1.7;
+            line-height: 1.9;
             color: #333;
         }
 
         /* Footer Section */
         .footer {
-            background-color: #1a1a1a;
+            background-color: #000c2b;
             color: #fff;
-            padding: 40px 0;
+            padding: 30px 0;
         }
 
         .footer a {
@@ -81,7 +106,7 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg bg-white py-3">
         <div class="container">
             <a class="navbar-brand" href="#">BNGSHOES.COM</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -91,21 +116,29 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">home</a>
+                        <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">shop</a>
+                        <a class="nav-link" href="#">Shop</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">categories</a>
+                        <a class="nav-link" href="#">Categories</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">about</a>
+                        <a class="nav-link active" href="#">About</a>
                     </li>
                 </ul>
+                <form class="d-flex ms-3">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                <div class="ms-3">
+                    <a href="#" class="me-3"><i class="fas fa-user"></i></a>
+                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                </div>
             </div>
         </div>
     </nav>
+
 
     <!-- About Section -->
     <div class="about-section container">
@@ -122,24 +155,80 @@
             our experience-based stores, have orders delivered to their homes, pick up orders at selected stores and
             provide free shipping throughout Indonesia, so with just one click, BNGSHOES is already at your doorstep.
         </p>
-        <p>BNGSHOES.COM merged with PT Mitra Gaya Indah in 2024, with the aim to serve sophisticated and trendy
-            consumers who want something “different”. BNGSHOES.COM provides a wide selection of fashion shoes from
-            unique and unusual international brands: Schutz, Arezzo, Pretty Ballerina, Gaimo, Unisa, Franco & Co, Mario
-            Fagni, Kontatto, and Paciotti.</p>
-        <p>Now through BNGSHOES.COM, we present a wider collection of fashion shoes and sandals from well-known global
-            brands such as Birkenstock, Dr. Martens, Staccato, Steve Madden, Nine West, Clarks, Rockport, and Fitflop.
-            Not only fashion shoes, BNGSHOES also offers a wide range of fashion bags for various events, from parties,
-            business events, or just socializing with friends and family.</p>
-        <p>Our mission is to provide you with a convenient and seamless online shopping experience. Customers can visit
-            our experience-based stores, have orders delivered to their homes, pick up orders at selected stores and
-            provide free shipping throughout Indonesia, so with just one click, BNGSHOES is already at your doorstep.
+
+        <h2>terms & conditions</h2>
+        <p>Effective as of august 2024.</p>
+        <p>This website is owned and operated by PT.BUNGA PERMANA, Tbk. These Terms and Conditions apply to visitors and
+            users of BNGSHOES.COM. The term “We” refers to BNGSHOES.COM, the provider of this website and “You” as the
+            user accepting these Terms and Conditions. If you do not agree to these Terms and Conditions, please do not
+            use this website.
+
+        <p>Eligibility</p>
+
+        <p>As a user and to place an order on BNGSHOES.COM, you must be at least 17 (seventeen) years old. If you are
+            under 17 (seventeen) years old, you can only place an order with BNGSHOES.COM with the consent and
+            involvement of your parent or guardian. If you do not have the consent and involvement of your parent or
+            guardian, you should stop using this site. </p>
+
+        <p>Privacy Policy</p>
+
+        <p>You agree that all information and personal data you provide to BNGSHOES.COM through the site, email,
+            telephone and other forms of communication may be collected, stored and processed in accordance with our
+            Privacy Policy. We reserve the right to change or update the Privacy Policy at any time and publish the
+            latest version on the website. For more information regarding our Privacy Policy, please see our Privacy
+            Policy.</p>
+
+        <P>License and Access to the Website</P>
+
+        <p>BNGSHOES.COM and all content provided on the website are the property of PT. BUNGA PERMANA, Tbk. and its
+            licensors or content providers, and are under the protection of copyright, trademark, and the laws of the
+            Republic of Indonesia and other applicable rules and regulations both at home and abroad. BNGSHOES.COM
+            grants you a limited license to access and make personal use of BNGSHOES.COM. Unless otherwise stated, you
+            have permission to access, copy, download and print the content provided on the website for personal and
+            non-commercial use, as long as you do not modify or remove any copyright, trademark or proprietary
+            information in the content. BNGSHOES.COM and its licensors or content providers own the rights to all
+            content provided on the website, including intellectual property rights, and provide this content under a
+            license that may be revoked at any time in accordance with BNGSHOES.COM.
         </p>
+
+        <h2>privacy policy</h2>
+        <p>Effective as of august 2024.</p>
+        <p>BNGSHOES.COM respects your concerns about privacy. This Privacy Notice describes the types of personal
+            information we collect, how we use that information, who we share it with, and the choices you can make
+            about the collection, use, and disclosure of information. We also describe the steps we take to protect the
+            security of the information and how you can contact us about our privacy practices. The phrase “personal
+            information” refers to information that can be used to identify you or the device you use to connect to the
+            Internet.</p>
+        <P>If you, at any time, have any questions about this Privacy Policy or any other questions in relation to how
+            we manage, protect and/or process your Personal Data, please email our Data Protection Officer at
+            bungnovi27@gmail.com .</P>
+
+        <p>Information We Collect</p>
+        <p>We may obtain personal information about you from a variety of sources, including BNGSHOES.COM, mobile
+            applications, when you communicate with us by phone, or email, or social media, or when you participate in
+            our parent, affiliate, or subsidiary companies, business partners, and other third parties.
+        </p>
+        <p>When you create an account, personal information may be collected by us, including but not limited to; name,
+            physical address, contact number, email address, date of birth and gender.</p>
+        <p>In addition, when you visit our websites or use our mobile applications, we may collect certain information
+            by automated means, such as cookies and web beacons. A “cookie” is a text file that a website sends to a
+            visitor's computer or other device connected to the Internet to uniquely identify the visitor's browser or
+            to store information or settings within the browser. “Web beacons,” also known as Internet tags, pixel tags,
+            or clear GIFs, are used to transmit information back to a web server. We may also use third-party website
+            analytics tools, which collect information about visitor traffic on our sites and mobile applications.</p>
+        <p>Links to Other Websites</p>
+        <p>Our website may contain links to other sites for your convenience and information. These sites may be
+            operated by companies not affiliated with BNGSHOES.COM. The linked sites may have their own Privacy
+            Policies, which you should review if you visit those sites. We are not responsible for the content of
+            websites not affiliated with BNGSHOES.COM, the use of those sites, or the privacy practices of those sites.
+        </p>
+
     </div>
 
     <!-- Footer -->
     <div class="footer">
         <div class="container text-center">
-            <p>BNGSHOES.COM</p>
+
             <p>Copyright 2024 BNGSHOES.COM. All Rights Reserved.</p>
             <div class="d-flex justify-content-center mb-3">
                 <input type="email" class="form-control subscribe-input" placeholder="Masukkan email Anda">
