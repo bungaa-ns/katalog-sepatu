@@ -1,0 +1,74 @@
+/* Navbar Styling */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-size: 1rem;
+    margin-right: 15px;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #000;
+}
+    
+@media (min-width: 991px) { 
+}
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: #021648;
+    visibility: hidden;
+    transition: 0.1s ease-in-out;
+}
+
+.nav-link:hover::before, .nav-link.active::before{
+    width: 100%;
+    visibility: visible;
+}
+
+.nav-link:hover :before,
+.nav-link.active::before {
+    width: 100%;
+    visibility: visible;
+}
+
+/* Hero Section */
+h1 {
+    font-size: 4rem;
+    color: #102d70;
+}
+
+.lead {
+    font-size: 1.2rem;
+    color: #3E3838;
+}
+
+.btn-dark {
+    background-color: #202C47;
+    border: none;
+}
+
+/* Product Highlight */
+.bg-light {
+    background-color: #F5F5F5 !important;
+}
+
+.text-warning {
+    font-size: 1.5rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #000c2b;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
