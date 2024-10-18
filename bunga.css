@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.price {
+    color: #1c1c1c;
+    font-weight: bold;
+}
+
+.installment {
+    color: #777;
+    font-size: 14px;
+}
+
+.size-options button {
+    margin: 0 5px 5px 0;
+    width: 60px;
+}
+
+.thumbnail {
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+.thumbnail:hover {
+    border-color: #000;
+}
+
+.carousel-inner img {
+    height: 350px;
+    object-fit: cover;
+}
+
+button.btn-dark {
+    background-color: green;
+    border-color: green;
+}
+
+.text-success {
+    font-size: 16px;
+    font-weight: bold;
+}
